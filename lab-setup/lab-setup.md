@@ -2,9 +2,9 @@
 
 Here are some suggestions for your lab setup as you watch this course.
 
-To start, you should have at least two Linux systems, one that will act as a server and one that will act as a client. However, I recommend more! I'll be focusing on an **Ubuntu Server**, **CentOS Server**, and a **Debian Linux client** with the GNOME desktop. The client side doesn't matter to much. Your options include: Debian client, Ubuntu Desktop, Fedora Workstation, and more. 
+To start, you should have at least two Linux systems, one that will act as a server and one that will act as a client. However, I recommend more! I'll be focusing on **Debian Server**, **Ubuntu Server**, **CentOS Server**, and a **Debian Linux client** with the GNOME desktop. The client side doesn't matter to much. Your options include: Debian client, Ubuntu Desktop, Fedora Workstation, and more. 
 
-> Note: See my lab setup [here](../.x-images/network_map_with_IP.png). An image is also displayed at the bottom of this document.
+> Note: See my lab setup [here](images/dave-lab-setup.png). An image is also displayed at the bottom of this document.
 
 If you have questions, feel free to contact me at:
 
@@ -12,6 +12,15 @@ If you have questions, feel free to contact me at:
 - Discord: https://discord.com/invite/mggw8VGzUp
 
 ## Linux Options 🐧
+
+- Debian 🐟
+
+  Debian download: https://www.debian.org/distrib/
+
+  Debian Installation Guide: https://www.debian.org/releases/bookworm/amd64/index.en.html
+
+  > Note: To run a proper Debian Server you would deselect all desktops during the installation. To run it as a client, select the desktop you prefer (such as GNOME).
+
 - Ubuntu Server
   
   Download: https://ubuntu.com/download/server
@@ -39,14 +48,6 @@ If you have questions, feel free to contact me at:
 - OpenSuse Server
   
   Download: https://get.opensuse.org/
-
-- Debian
-
-  Debian download: https://www.debian.org/distrib/
-
-  Debian Installation Guide: https://www.debian.org/releases/bookworm/amd64/index.en.html
-
-  > Note: To run a proper Debian Server you would deselect all desktops during the installation. To run it as a client, select the desktop you prefer (such as GNOME).
 
 > For step-by-step installations of various Linux distributions, including Debian and Fedora, see my website: https://prowse.tech/linux-installs/
 
@@ -123,6 +124,18 @@ When you are done, you can check out [Lab 01](../labs/module-01/lab-user-id/lab-
 
 Here's an example of my lab setup for the video course:
 
-![Lab Setup](../.images/network_map_with_IP.png)
+![Lab Setup](images/dave-lab-setup.png)
+
+The bulk of the work I do in this video course is within the Debian, Ubuntu, and CentOS virtual machines on the 10.0.2.0 network. However, I will be showing a lot of other systems, both on-premises and on the cloud as well.
+
+You'll note that I am using KVM as my virtualization platform. My main system runs Debian Linux and for my needs, KVM is the best option for that OS. If you run Linux, consider using KVM. It is powerful and efficient and easily automated. 
+
+For more information, check out my article and video about KVM [here](https://prowse.tech/kvm/).
 
 ---
+
+That's it for the lab setup document. Remember, if you have any questions, feel free to contact me at:
+- [My Website](https://prowse.tech)
+- [My Discord Server](https://discord.com/invite/mggw8VGzUp)
+
+Good luck with your lab setup! 👍
