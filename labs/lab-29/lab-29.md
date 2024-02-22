@@ -5,7 +5,7 @@ File permissions are an example of the balance of security that we spoke of earl
 This lab covers:
 
 - `chmod` basics
-- `chmod permissions and configuration table
+- `chmod` permissions and configuration table
 - Increased Security with `chmod`
 
 > Note: I'll be working on a Debian client system in the account called `user` for this lab.
