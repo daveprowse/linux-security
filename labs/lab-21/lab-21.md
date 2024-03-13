@@ -68,9 +68,17 @@ Let's perform those actions now:
 
 `systemctl restart sshd`
 
+> Note: You may receive an error here. That is normal! SELinux has not been notified yet.
+
 **Use `semanage` to tell SELinux about the change**
 
 `semanage port -a -t ssh_port_t -p tcp 2222`
+
+Now restart sshd again:
+
+`systemctl restart sshd`
+
+This time, you should not get an error.
 
 **Open port 2222 on the firewall**
 
@@ -111,7 +119,7 @@ or
 👍 **We're just getting warmed up! Keep going!** 👍
 
 ---
-
+Close out the lesson
 ## 📃 Extra Credit
 
 Learn more about SELinux:

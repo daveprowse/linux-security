@@ -157,28 +157,35 @@ Let's show how to open a single port (or service) by adding a rule to the rulese
 Now we'll add a new rule to allow for pinging IP addresss:
 
 ```console
-add rule inet ports_table input icmp type {echo-request} accept and icmp type {echo-reply} accept
+add rule inet ports_table input icmp type {echo-request} accept 
+add rule inet ports_table input icmp type {echo-reply} accept
 ```
 
-Test it by pinging the IP address for example.com: 93.184.216.34.
+Test it 
+
+- (From a client) by pinging the server
+- (From a server) by pinging the IP address for example.com: 93.184.216.34.
 
 Next, allow pinging by DNS name:
 
 ```console
-add rule inet ports_table input tcp sport 53 accept and add rule inet ports_table input udp sport 53 accept
+add rule inet ports_table input tcp sport 53 accept 
+add rule inet ports_table input udp sport 53 accept
 ```
 
 Test it by pinging the domain name example.com.
+
+View the entire ruleset: `nft list ruleset`
 
 ### Remove a Rule
 
 Find the handle (that is automagically added):
 
-`nft list table filter -a`  
+`nft -a list table <table_name>`
 
 or
 
-`nft list table inet ports_table -a` (whatever the name might be)
+`nft -a list table inet ports_table` (whatever the name might be)
 
 Then delete the rule:
 
@@ -186,7 +193,9 @@ Then delete the rule:
 
 For example:
 
-`nft delete rule inet ports_table input handle 2`
+`nft delete rule inet ports_table input handle 3`
+
+> Note: Don't get rid of the ability to SSH!
 
 > Note: You could remove the entire chain if you wish: `nft delete chain inet ports_table handle 1`
 

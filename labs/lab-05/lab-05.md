@@ -40,7 +40,7 @@ Now you can have additional options to the new line ending in `pam_pwquality.so`
 
 - To require special (or other) characters: `ocredit=1`
 
-- To require that a certain amount of password criteria be included: `minclass=2`
+- To require that a certain amount of password criteria be included, use the `minclass` option, for example: `minclass=3`
 
 - To specifically require a particular amount of characters, use the minus sign. For example, `ocredit=-1`. Note the *-1* instead of a 1.
 
@@ -52,11 +52,15 @@ password	requisite			pam_pwquality.so retry=3 ucredit=1 dcredit=1 ocredit=-2 min
 password	[success=1 default=ignore]	pam_unix.so obscure use_authtok try_first_pass yescrypt minlen=12
 ```
 
-Now, go ahead and try changing a user account's password with the `passwd` command. See if your new password selections comply with the new criteria!
+Now, go ahead and try changing a user account's password with the `passwd` command. Try the following 14-character password:
+
+**LiNuXisAw3soMe**
+
+Does it work? Try other passwords. See if your new password selections comply with the new criteria!
 
 > **Warning:** Be sure to test this with a standard user account, and not the root account! It's easy to forget a password!
 
-> Note:	This portion of the lab will work differently on Fedora/RHEL/CentOS systems. There you use the Authselect tool.
+> Note: This portion of the lab will work differently on Fedora/RHEL/CentOS systems. There you use the Authselect tool.
 
 ---
 That completes the lab!

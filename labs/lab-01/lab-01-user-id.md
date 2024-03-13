@@ -21,12 +21,11 @@ user@deb-client:~$
 ```
 
 ---
-***Complete this!***
 
-> Note: to learn more about basic usage of the Linux Terminal and basic Linux commands see these videos on my website:
+> Note: to learn more about basic usage of the Linux Terminal and basic Linux commands see these videos on O'Reilly:
 
-- 1.6
-- 1.7
+- 1.6 (link coming soon)
+- 1.7 (link coming soon)
 
 ---
 

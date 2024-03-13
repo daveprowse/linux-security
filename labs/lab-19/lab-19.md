@@ -7,7 +7,7 @@ In this lab we will:
 - Show Enforce and Complain modes
 - Disable and remove an AppArmor profile
 
-> Note: For this lab I will be working on a Debian 12 client system as root.
+> Note: For this lab I will be working on a Debian 12 client system as root. If you decide to work as another user, make sure that the user account has sudo permissions and use the `sudo` command before any administrative commands.
 
 ## Install Required Applications
 
@@ -15,7 +15,7 @@ To create profiles with AppArmor you need to make sure that the AppArmor Utiliti
 
 - Issue the following command:
 
-  `sudo apt install apparmor-utils auditd`
+  `apt install apparmor-utils auditd`
 
 - Verify that everything is up and running:
 
@@ -83,7 +83,7 @@ It should still function, but as you can see from the lab, there are a lot of wa
 
 - Check the status of the AppArmor profiles:
 
-  `sudo aa-status | less`
+  `aa-status | less`
 
   You should see the line item: `/usr/local/bin/human` in the list of "enforced" profiles.
 
@@ -103,11 +103,11 @@ To do this, you need to know the actual name of the profile, which is listed in 
 
 For example, to change a profile to "enforce" mode:
 
-`sudo aa-enforce usr.local.bin.human`
+`aa-enforce usr.local.bin.human`
 
 Or, to set it to complain so you can track what the application is doing:
 
-`sudo aa-complain usr.local.bin.human`
+`aa-complain usr.local.bin.human`
 
 > Note: You can see that the slashes (`/`) are replaced with dots `(.)`
 

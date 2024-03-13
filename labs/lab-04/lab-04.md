@@ -89,7 +89,7 @@ In this lab we'll show how to change the default password settings and criteria 
 
   Here the maximum password age was changed from 99999 days to 365 days. Also, there is an account expiration date at the end of the year 2021. After December 31, 2021, the user account sysadmin will not be able to login. The other settings were not modified.
 
-  > **Tech Tip:** While this is a good command to know, it is not used quite as often today. It has a lot of additional options which can be useful though. For example, to set a user's password to expire (make it a zero-day password) you can issue the following command:
+  > **Tech Tip:** While this is a good command to know, it is not used quite as often today. It has a lot of additional options which can be useful though. For example, to set a user's password to expire (make it a zero-day password) you can issue the following command (as root):
 
   `chage -d 0 sysadmin`
 

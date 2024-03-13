@@ -1,6 +1,6 @@
 # Lab 18 - AppArmor Basics ⚙️
 
-AppArmor is a Linux Security Module that is used primarily in Debian and Ubuntu systems. It is designed to help protect the applications that you run on your server.
+AppArmor is a Linux Security Module that is used primarily in Debian and Ubuntu systems. It is designed to help protect the applications that you run on your server. It is an example of Mandatory Access Control (MAC).
 
 In this lab we will:
 
@@ -10,7 +10,7 @@ In this lab we will:
 
 Check to see if you have AppArmor (and associated utilities) installed with the following command:
 
-`sudo apt-get list | grep "apparmor"`
+`sudo apt list | grep "apparmor"`
 
 If you don't have AppArmor, you can install it, along with additional tools:
 
@@ -72,15 +72,17 @@ Sometimes, AppArmor might cause issues with your system. It's not recommended to
 
   Then, restart the system.
 
-- Next, issue the `sudo aa-status` command. You should see that the apparmor module is loaded but no other information.
+- Next, issue the `sudo aa-status` command. You should see that the apparmor module is loaded but most (if not all) profiles are gone.
 
-  The service is stopped, and therefore it isn't enforcing any protection. As mentioned, this isn't normally a good idea, so let's start it and enable it once again.
+  The service is stopped, and therefore it isn't enforcing protection. As mentioned, this isn't normally a good idea, so let's start it and enable it once again.
 
   `sudo systemctl --now enable apparmor`
 
   And restart the system.
 
 - Check it with `systemctl status apparmor` and make sure that the profiles are loaded and in enforce mode once again.
+
+> Note: Actually, Apparmor might still list items (such as Docker). To completely disable AppArmor, add the `apparmor=0` option to your GRUB kernel boot command line, or uninstall it with `apt remove apparmor`. (Be sure not to use `apt purge` because that will remove apparmor configuration files that you might want later.) For temporary disabling use the `aa-teardown` command (not persistent).
 
 👍 **This is just the beginning. Enjoy the world of Linux Security!** 👍
 

@@ -218,9 +218,27 @@ Check your work:
 
 It should show that no ports are opened once again.
 
+## Change the Default Zone
+
+Up until this point we have had to use the `--zone=block` argument to make changes to that zone. That is because the *public* zone is currently the "default". Let's view the current zone and change it.
+
+View the current zone:
+
+`firewall-cmd --get-default-zone`
+
+Now let's change it:
+
+`firewall-cmd --set-default-zone block`
+
+View the current zone again. It should display as "block".
+
+Now, any command we run will be executed within the "block" zone by default. For example:
+
+`firewall-cmd --list-all`
+
 ## Change the Active Zone back to the Original
 
-Issue the following command to change the active zone:
+Issue the following command to change the active zone for the network interface card:
 
 `firewall-cmd --zone=public --change-interface=enp1s0 --per`
 
@@ -229,6 +247,14 @@ Issue the following command to change the active zone:
 Verify the active zone:
 
 `firewall-cmd --get-active-zones`
+
+Now, set that public zone as the default (this is the original setting):
+
+`firewall-cmd --set-default-zone public`
+
+Check it with:
+
+`firewall-cmd --list-all`
 
 ## Open and Close Multiple Ports at Once
 

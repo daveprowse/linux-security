@@ -10,7 +10,8 @@ Discord Server: https://discord.gg/mggw8VGzUp
 
 This is the repository for the *Linux Security Basics & Beyond* video course.
 
-> *Note: Link to course coming soon...*
+## Note: This video course is not published yet! 
+## Link to course coming soon...
 
 > **Important!** Make sure that you have at least two Linux systems (or virtual machines) ready to go! For details, see the [Lab Setup](lab-setup/lab-setup.md) document.
 
