@@ -128,13 +128,31 @@ Work out the math!
 
 So the permissions would be 744. But you could go further. How about we give full access to User, but zero access to Group and Other. Easy, that would be 700.
 
-Try it now:
+Try it now. First make a copy of the file:
 
-`chmod 700 test1.sh`
+`cp test1.sh test2.sh`
 
-Now run it again: `./test1.sh`
+> Note: You will see that the copied file inherits the same permissions as the source!
 
-It should still function. But for other users, it will not. They won't even be able to read the file. Fantastic!
+Now change the permissions for the second file.
+
+`chmod 700 test2.sh`
+
+Compare the permissions of each file with `ls -l`
+
+Now run the new file: `./test2.sh`
+
+It should function for you. But for other users, it will not. They won't even be able to read the file. Fantastic!
+
+Finally, let's change both files to 744 at the same time:
+
+`chmod 744 *`
+
+And check it with `ls -l`. 
+
+**Question**: What permissions are being handed out to the three entities of UGO?
+
+**Answer**: User = rwx, Group = r, Other = r
 
 👍 **Great Work! Continue!** 👍
 

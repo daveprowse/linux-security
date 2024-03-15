@@ -82,7 +82,7 @@ Often, the ownership settings are the same, but they can be different if need be
 
 - Return to the user terminal and attempt to run the script. It should say `Permission denied`.
 
-  Why? The user account no longer has User ownership. However, the user is part of the `ops` group which currently has group ownership. But... if you remember from the previous lab, the Group and Other permissions were set to 0. That means no access. Let's change that!
+  Why? The user account no longer has User ownership. However, the user is part of the `ops` group which currently has group ownership. But... if you remember from the previous lab, the Group and Other permissions were set to 4. That means read access only. Let's change that!
 
 - In the root terminal, modify the test1.sh permissions so that: User gets full permissions, Group gets execute permission, and Other gets no permissions. (Note, to give execute permissions, you must also give read permissions.) This would equate to 750, so the command would be:
 
@@ -103,7 +103,9 @@ Often, the ownership settings are the same, but they can be different if need be
 
   `chmod +x test1.sh`
 
-  Remember that is the equivalent of 755.
+  Remember, that gives the execute permission for all three entities of UGO.
+
+  > Note: As you will see, this is not the same as `chmod 755`. The last command simply adds the execute permission. For even more "normal" permissions, use the actual command `chmod 755 test1.sh`. 
 
 We could go on for days with this! Practice it!
 

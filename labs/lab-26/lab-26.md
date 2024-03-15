@@ -46,7 +46,7 @@ You can see three files inside of .ssh: id_rsa (which is the private key), id_rs
 
 ## Create an ed25519-based key pair
 
-If I can, I will use ed-25519 key pairs. This can be done by using the `-t` option:
+If at all possible, I use ed-25519 key pairs. This can be done by using the `-t` option:
 
 `ssh-keygen -t ed25519`
 

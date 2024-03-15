@@ -232,7 +232,7 @@ And there is much more. As you can see, there are dozens of settings in `sshd_co
 
 ## Summary
 
-Think of how many hackers attempt to get into servers that allow inbound SSH connections. There are literally millions, not to mention bots. So... you could argue that there can't be enough protection for an SSH server.
+Think of how many hackers attempt to get into servers that allow inbound SSH connections. There are tons, not to mention bots. So... you could argue that there can't be enough protection for an SSH server.
 
 So some fundamental ways to increase the security of the SSH server are to: use a different and less known port; disable password-based SSH; restrict SSH access by user and group; disable root login; reduce the maximum authentication attempts; and set up SSH timeouts.
 
