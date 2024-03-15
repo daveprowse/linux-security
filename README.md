@@ -10,8 +10,10 @@ Discord Server: https://discord.gg/mggw8VGzUp
 
 This is the repository for the *Linux Security Basics & Beyond* video course.
 
+########################################
 ## Note: This video course is not published yet! 
 ## Link to course coming soon...
+########################################
 
 > **Important!** Make sure that you have at least two Linux systems (or virtual machines) ready to go! For details, see the [Lab Setup](lab-setup/lab-setup.md) document.
 
@@ -30,7 +32,7 @@ If you are new to computer security, consider:
 - [A+ Security Introduction (Book)](<https://learning.oreilly.com/library/view/comptia-a-core/9780137637775/part02_core02.xhtml#part2c_02>)
 - [Security+ Cert Guide (Book)](<https://learning.oreilly.com/library/view/comptia-r-security-sy0-501/9780134781051/>)
 
-Check out my latest live streams: https://prowse.tech/upcoming-live-streams/ 
+Also, check out my latest [live streams](https://prowse.tech/live-training/) and [recorded training](https://prowse.tech/recorded_training/).
 
 Enjoy the video course!!
 
