@@ -1,4 +1,4 @@
-# Linux Security - Basics & Beyond
+# 🛡️ Linux Security - Basics & Beyond 🛡️
 
 Copyright 2024 - Dave Prowse
 
@@ -20,7 +20,6 @@ This is the repository for the *Linux Security Basics & Beyond* video course.
 All of the labs can be found within.
 
 > Note: The step-by-step lab files are written in Markdown. You can preview them directly on GitHub or with a variety of preview tools (VS Code, Glow, Joplin, mdless, etc...) See [this article](<https://prowse.tech/markdown>) for an explanation of how Markdown works and how you can use it.
-
 
 I'll be Demonstrating in several Linux distributions. To best follow along with me I recommend a Debian or Ubuntu Server, a CentOS Server, and then some type of Linux client with a desktop (Ubuntu, Debian, Fedora, etc). You can find step-by-step instructions and videos about how to install Debian (and other distros) at my website: https://prowse.tech/linux-installs/. And don't forget to subscribe for the latest updates!
 
