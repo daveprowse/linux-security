@@ -50,7 +50,7 @@ Set the profile to enforce mode:
 
 ## Analyze the Profile and Apache
 
-Check that the new profile is being :
+Check that the new profile is running:
 
 `aa-status`
 

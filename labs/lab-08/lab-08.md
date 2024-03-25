@@ -1,6 +1,6 @@
 # Lab 08 - Using the sudo Command ⚙️
 
-sudo has multiple meanings. First, sudo is a program that runs on Linux systems which associates permissions with users and groups. sudo is also a group that a user can be added to in Debian/Ubuntu and similar systems. By default, once added to the sudo group, the user becomes an administrator. Finally, sudo is a command. When it precedes another command it allows the command to be run as an administrator. For example, `apt update` requires sudo rights. So for a typical user who acts as an admin to do an update, that user must type `sudo apt update`. Any command that requires administrative privileges needs to be preceeded by sudo. The only case where this is not true is if you are logged in as root.
+sudo has multiple meanings. First, sudo is a program that runs on Linux systems which associates permissions with users and groups. sudo is also a group that a user can be added to in Debian/Ubuntu and similar systems. By default, once added to the sudo group, the user becomes an administrator. Finally, sudo is a command. When it precedes another command it allows the command to be run as an administrator. For example, `apt update` requires sudo rights. So for a typical user who acts as an admin to do an update, that user must type `sudo apt update`. Any command that requires administrative privileges needs to be preceded by sudo. The only case where this is not true is if you are logged in as root.
 
 ## Work with sudo
 

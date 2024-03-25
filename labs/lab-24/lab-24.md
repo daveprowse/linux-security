@@ -240,6 +240,10 @@ First, backup the current nftables configuration:
   
 > Play with it! Learn nftables!
 
+> Note: Fedora/RHEL/CentOS use different paths:
+> - Main configuration file: `/etc/sysconfig/nftables.conf`
+> - Templates: `/etc/nftables` - for example, main.nft.
+
 ## Restore the Original Configuration
 
 - Copy the backed up original config to /etc:

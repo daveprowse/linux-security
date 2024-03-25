@@ -74,7 +74,7 @@ This lab shows how to stop and disable a service, and check the open ports of a 
 	tcp           LISTEN          0               128                               [::1]:7001                            [::]:*    
 	```
 
-	Scroll over to see the open ports. You can see that the DHCP client (port 67), DNS (port 53), SSH (port 22), and several others are opened. Those are ports that aare opened on the inbound side. Every open port is a potential vulnerability. Normally, a client such as this would have no legitimate reason to have port 22 open (amoong other ports). We could close that port by stopping and disabling the service with one command.
+	Scroll over to see the open ports. You can see that the DHCP client (port 67), DNS (port 53), SSH (port 22), and several others are opened. Those are ports that are opened on the inbound side. Every open port is a potential vulnerability. Normally, a client such as this would have no legitimate reason to have port 22 open (among other ports). We could close that port by stopping and disabling the service with one command.
 
 	Don't do this on your system (so you don't lose SSH) but here is an example:
 

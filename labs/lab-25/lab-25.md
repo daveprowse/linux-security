@@ -1,6 +1,6 @@
 # Lab 25 - Translating iptables to nftables ⚙️
 
-You might work with a system that requires iptables, or perhaps you are more fluent with iptables than nftables. To help in your nftables learning process there is an iptables to nftables translator. It's nor perfect, but it can be quite helpful if you are transitioning from one to the other.
+You might work with a system that requires iptables, or perhaps you are more fluent with iptables than nftables. To help in your nftables learning process there is an iptables to nftables translator. It's not perfect, but it can be quite helpful if you are transitioning from one to the other.
 
 In this lab I will be working on a Debian Server as root.
 

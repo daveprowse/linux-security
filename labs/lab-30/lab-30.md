@@ -101,7 +101,7 @@ Often, the ownership settings are the same, but they can be different if need be
 
 - Let's change the permissions back to something more normal:
 
-  `chmod +x test1.sh`
+  `chmod +x test1.sh`700
 
   Remember, that gives the execute permission for all three entities of UGO.
 

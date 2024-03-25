@@ -2,6 +2,14 @@
 
 This lab demonstrates how one failed service or program will cause a "degraded system". The lab is run on a Debian client.
 
+## Check the System Status
+
+First, let's check our current system status. We can do this with the following command:
+
+`systemctl status`
+
+Hopefully, your system will show that it is "Running" in green. That means that no services have failed. If not, well then, you will learn how to troubleshoot the problem in this lab!
+
 ## Cause a Service to Fail
 
 Here we'll type an error into the SSH server configuration file. When we attempt to restart SSH, it will fail. That will then cause the system to become degraded.  

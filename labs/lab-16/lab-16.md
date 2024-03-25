@@ -39,6 +39,8 @@ Set it to executable:
 
 `chmod +x secure-interface-ens3.sh`
 
+> Note: There are more options in the secure-interface-ens3.sh file in this directory.
+
 ### Add the Script to the interfaces File
 
 Open the interfaces file with your editor:
@@ -47,7 +49,7 @@ Open the interfaces file with your editor:
 
 Add the following line underneath the gateway argument for the interface in question:
 
-`pre-up /etc/network/secure-interface-ens3`
+`pre-up /etc/network/secure-interface-ens3.sh`
 
 So, the file might look something like this:
 
@@ -57,7 +59,7 @@ allow-hotplug ens3
 iface ens3 inet static
         address 10.0.2.51/24
         gateway 10.0.2.1 
-        pre-up /etc/network/secure-interface-ens3
+        pre-up /etc/network/secure-interface-ens3.sh
 ```
 
 This will call the script as the network interface is being brought up.
@@ -80,9 +82,9 @@ When you are finished with the lab, return your server to normal.
 - Remove the `pre-up` line item from the `/etc/network/interfaces` file. (Or comment it out if you want to use it later.)
 - Reboot the server (or down and up the network interface).
 
-Test that everything works as normal by pinging the server from a remote client and obtaining replies. 
+Test that everything works as normal by pinging the server from a remote client and obtaining replies.
 
-> Note: These modifications are a bit more old school. While they work, they can also be accomplished through the use of a firewall. In fact, before Linux firewalls worked directly at the kernel-level in Linux, this is one of the things that you might have done to further secure a Debian server. 
+> Note: These modifications are a bit more old school. While they work, they can also be accomplished through the use of a firewall. In fact, before Linux firewalls worked directly at the kernel-level in Linux, this is one of the things that you might have done to further secure a Debian server.
 
 ## Analyze NIC Statistics
 
@@ -119,5 +121,7 @@ Learn more about wireless networks and wireless security:
 [Wireless Networking](<https://learning.oreilly.com/videos/comptia-a-core/9780137903740/9780137903740-CAP1_02_11_00/>)
 
 [Wireless Security](<https://learning.oreilly.com/videos/comptia-a-core/9780137903894/9780137903894-CAP2_02_12_00/>)
+
+Learn more about securing network access in Debian - [link](https://www.debian.org/doc/manuals/securing-debian-manual/network-secure.html)
 
 ---

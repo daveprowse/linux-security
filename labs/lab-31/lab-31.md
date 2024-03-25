@@ -127,19 +127,25 @@ That will terminate all instances of firefox. Prove it with another `ps aux | gr
 
 > Note: You might remember using this command during the SSH portion of this course. I rely on it heavily in that respect.
 
+This can also be used to terminate all processes based on a name. For example:
+
+> **WARNING!** Careful with this one! It will close all terminals that are opened!
+
+`pkill gnome-terminal`
+
+Yikes!
+
 ### killall (optional)
 
 The `killall` command is not installed by default. But you can get it with the following command:
 
 `sudo apt install psmisc`
 
-This can also be used to terminate all processes based on a name. For example:
+This can also be used to terminate all processes based on a name. For example, open two instances of the Calculator. Then:
 
-> **WARNING!** Careful with this one! It will close all terminals that are opened!
+`killall gnome-calculator`
 
-`killall gnome-terminal`
-
-Yikes!
+That should terminate both instances at once. There is a bit more functionality with this command. Check out `killall -h`
 
 ### Stop and Terminate Active Processes with Keyboard Shortcuts
 
